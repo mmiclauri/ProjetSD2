@@ -18,6 +18,6 @@ class Path {
     }
 
     public int getLength() {
-        return artistIds.size();
+        return artistIds.size()-1;
     }
 }
