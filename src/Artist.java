@@ -19,10 +19,6 @@ public class Artist {
     return name;
   }
 
-  public List<String> getCategories() {
-    return categories;
-  }
-
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();

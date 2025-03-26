@@ -95,7 +95,7 @@ public class Graph {
         int destId = artistsByName.get(artistB).getId();
 
         try {
-            PathFinder pathFinder = new ShortestPathFinder();
+            PathFinder pathFinder = new BFS();
             Path path = pathFinder.findPath(this, sourceId, destId);
 
             printPath(path);
@@ -113,7 +113,7 @@ public class Graph {
         int destId = artistsByName.get(artistB).getId();
 
         try {
-            PathFinder pathFinder = new MaxMentionsPathFinder();
+            PathFinder pathFinder = new Dijkstra();
             Path path = pathFinder.findPath(this, sourceId, destId);
 
             printPath(path);
@@ -143,15 +143,6 @@ public class Graph {
             return neighbors.get(artistId2);
         }
         return -1;
-    }
-
-    public boolean areConnected(int artistId1, int artistId2) {
-        return connections.containsKey(artistId1) &&
-            connections.get(artistId1).containsKey(artistId2);
-    }
-
-    public Artist getArtistById(int id) {
-        return artistsById.get(id);
     }
 
     public Set<Integer> getAllArtistIds() {
