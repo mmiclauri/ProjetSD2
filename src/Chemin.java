@@ -2,10 +2,12 @@ import java.util.List;
 
 class Chemin {
     private List<Integer> artistIds;
+    private int longueurChemin;
     private double coutTotal;
 
-    public Chemin(List<Integer> IdsArtistes, double coutTotal) {
+    public Chemin(List<Integer> IdsArtistes, double coutTotal, int longueurChemin) {
         this.artistIds = IdsArtistes;
+        this.longueurChemin = longueurChemin;
         this.coutTotal = coutTotal;
     }
 
@@ -18,6 +20,6 @@ class Chemin {
     }
 
     public int getLongueurChemin() {
-        return artistIds.size()-1;
+        return longueurChemin;
     }
 }

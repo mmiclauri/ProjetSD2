@@ -61,7 +61,7 @@ class Graph {
         while (!file.isEmpty()) {
             int actuel = file.poll();
             if (actuel == fin) {
-                printPath(constructPath(fin, parent, calculerLongueurChemin(parent, fin)));
+                printChemin(construireChemin(fin, parent, calculerLongueurChemin(parent, fin)));
                 return;
             }
 
@@ -96,7 +96,7 @@ class Graph {
         while (!pq.isEmpty()) {
             int actuel = pq.poll();
             if (actuel == fin) {
-                printPath(constructPath(fin, parent, distance.get(fin)));
+                printChemin(construireChemin(fin, parent, distance.get(fin)));
                 return;
             }
             if (visite.add(actuel)) {
@@ -130,16 +130,20 @@ class Graph {
         return cout;
     }
 
-    private Chemin constructPath(int fin, Map<Integer, Integer> parent, double coutTotal) {
+    private Chemin construireChemin(int fin, Map<Integer, Integer> parent, double coutTotalChemin) {
         List<Integer> artistes = new ArrayList<>();
+        int longueurChemin = 0;
         for (Integer at = fin; at != null; at = parent.get(at)) {
             artistes.add(at);
+            if (parent.get(at) != null) {
+                longueurChemin++;
+            }
         }
         Collections.reverse(artistes);
-        return new Chemin(artistes, coutTotal);
+        return new Chemin(artistes, coutTotalChemin, longueurChemin);
     }
 
-    private void printPath(Chemin chemin) {
+    private void printChemin(Chemin chemin) {
         System.out.println("Longueur du chemin : " + chemin.getLongueurChemin());
         System.out.println("Coût total du chemin : " + chemin.getCoutTotalChemin());
         System.out.println("Chemin :");
