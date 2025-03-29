@@ -65,7 +65,11 @@ class Graph {
                 return;
             }
 
-            for (Map.Entry<Integer, Double> entry : listeAdjacence.getOrDefault(actuel, Collections.emptyMap()).entrySet()) {
+            Map<Integer, Double> voisins = listeAdjacence.get(actuel);
+            if (voisins == null) {
+                voisins = new HashMap<>();
+            }
+            for (Map.Entry<Integer, Double> entry : voisins.entrySet()) {
                 int neighbor = entry.getKey();
                 if (visite.add(neighbor)) {
                     parent.put(neighbor, actuel);
@@ -82,7 +86,8 @@ class Graph {
 
         Map<Integer, Double> distance = new HashMap<>();
         Map<Integer, Integer> parent = new HashMap<>();
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.comparingDouble(distance::get));
+        Comparator<Integer> comparator = Comparator.comparingDouble(distance::get);
+        PriorityQueue<Integer> pq = new PriorityQueue<>(comparator);
         Set<Integer> visite = new HashSet<>();
 
         for (Integer id : artistes.keySet()) {
@@ -100,7 +105,11 @@ class Graph {
                 return;
             }
             if (visite.add(actuel)) {
-                for (Map.Entry<Integer, Double> entry : listeAdjacence.getOrDefault(actuel, Collections.emptyMap()).entrySet()) {
+                Map<Integer, Double> voisins = listeAdjacence.get(actuel);
+                if (voisins == null) {
+                    voisins = new HashMap<>();
+                }
+                for (Map.Entry<Integer, Double> entry : voisins.entrySet()) {
                     int neighbor = entry.getKey();
                     double nvDistance = distance.get(actuel) + entry.getValue();
 
@@ -116,8 +125,11 @@ class Graph {
     }
 
     private int getArtisteId(String nom) {
-        return Optional.ofNullable(nomArtisteVersId.get(nom))
-                .orElseThrow(() -> new RuntimeException("Artiste introuvable: " + nom));
+        Integer id = nomArtisteVersId.get(nom);
+        if (id == null) {
+            throw new RuntimeException("Artiste introuvable: " + nom);
+        }
+        return id;
     }
 
     private double calculerLongueurChemin(Map<Integer, Integer> parent, int fin) {
