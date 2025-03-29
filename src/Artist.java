@@ -2,12 +2,12 @@ import java.util.List;
 
 class Artist {
     private int id;
-    private String name;
+    private String nom;
     private List<String> categories;
 
-    public Artist(int id, String name, List<String> categories) {
+    public Artist(int id, String nom, List<String> categories) {
         this.id = id;
-        this.name = name;
+        this.nom = nom;
         this.categories = categories;
     }
 
@@ -15,12 +15,12 @@ class Artist {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getNom() {
+        return nom;
     }
 
     @Override
     public String toString() {
-        return name + " (" + String.join(";", categories) + ")";
+        return nom + " (" + String.join(";", categories) + ")";
     }
 }

@@ -2,33 +2,33 @@ import java.io.*;
 import java.util.*;
 
 class Graph {
-    private Map<Integer, Artist> artists = new HashMap<>();
-    private Map<String, Integer> artistNameToId = new HashMap<>();
-    private Map<Integer, Map<Integer, Double>> adjacencyList = new HashMap<>();
+    private final Map<Integer, Artist> artistes = new HashMap<>();
+    private final Map<String, Integer> nomArtisteVersId = new HashMap<>();
+    private final Map<Integer, Map<Integer, Double>> listeAdjacence = new HashMap<>();
 
     public Graph(String artistsFile, String mentionsFile) {
-        parseArtists(artistsFile);
-        parseMentions(mentionsFile);
+        chargerArtists(artistsFile);
+        chargerMentions(mentionsFile);
     }
 
-    private void parseArtists(String fileName) {
+    private void chargerArtists(String fileName) {
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(",", 3);
                 int id = Integer.parseInt(parts[0]);
                 String name = parts[1];
-                List<String> categories = parts.length > 2 ? Arrays.asList(parts[2].split(";")) : new ArrayList<>();
-                Artist artist = new Artist(id, name, categories);
-                artists.put(id, artist);
-                artistNameToId.put(name, id);
+                List<String> categories = (parts.length > 2) ? Arrays.asList(parts[2].split(";")) : new ArrayList<>();
+
+                artistes.put(id, new Artist(id, name, categories));
+                nomArtisteVersId.put(name, id);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private void parseMentions(String fileName) {
+    private void chargerMentions(String fileName) {
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -37,8 +37,7 @@ class Graph {
                 int toId = Integer.parseInt(parts[1]);
                 double weight = 1.0 / Integer.parseInt(parts[2]);
 
-                adjacencyList.putIfAbsent(fromId, new HashMap<>());
-                adjacencyList.get(fromId).put(toId, weight);
+                listeAdjacence.computeIfAbsent(fromId, k -> new HashMap<>()).put(toId, weight);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -46,34 +45,31 @@ class Graph {
     }
 
     public void trouverCheminLePlusCourt(String artisteA, String artisteB) {
-        int a = getArtistId(artisteA);
-        int b = getArtistId(artisteB);
+        int debut = getArtisteId(artisteA);
+        int fin = getArtisteId(artisteB);
+
         Map<Integer, Integer> parent = new HashMap<>();
         Map<Integer, Double> distance = new HashMap<>();
-        Queue<Integer> queue = new LinkedList<>();
-        Set<Integer> visited = new HashSet<>();
+        Queue<Integer> file = new LinkedList<>();
+        Set<Integer> visite = new HashSet<>();
 
-        queue.add(a);
-        visited.add(a);
-        parent.put(a, null);
-        distance.put(a, 0.0);
+        file.add(debut);
+        visite.add(debut);
+        parent.put(debut, null);
+        distance.put(debut, 0.0);
 
-        while (!queue.isEmpty()) {
-            int current = queue.poll();
-            if (current == b) {
-                double totalCost = distance.get(b);
-                imprimerChemin(construireChemin(a, b, parent, totalCost));
+        while (!file.isEmpty()) {
+            int actuel = file.poll();
+            if (actuel == fin) {
+                printPath(constructPath(fin, parent, calculerLongueurChemin(parent, fin)));
                 return;
             }
 
-            for (Map.Entry<Integer, Double> entry : adjacencyList.getOrDefault(current, Collections.emptyMap()).entrySet()) {
+            for (Map.Entry<Integer, Double> entry : listeAdjacence.getOrDefault(actuel, Collections.emptyMap()).entrySet()) {
                 int neighbor = entry.getKey();
-                double weight = entry.getValue();
-                if (!visited.contains(neighbor)) {
-                    visited.add(neighbor);
-                    parent.put(neighbor, current);
-                    distance.put(neighbor, distance.get(current) + weight);
-                    queue.add(neighbor);
+                if (visite.add(neighbor)) {
+                    parent.put(neighbor, actuel);
+                    file.add(neighbor);
                 }
             }
         }
@@ -81,63 +77,75 @@ class Graph {
     }
 
     public void trouverCheminMaxMentions(String artisteA, String artisteB) {
-        int idA = getArtistId(artisteA);
-        int idB = getArtistId(artisteB);
-        Map<Integer, Double> distance = new HashMap<>();
-        Map<Integer, Integer> precedent = new HashMap<>();
-        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingDouble(a -> a[1]));
+        int debut = getArtisteId(artisteA);
+        int fin = getArtisteId(artisteB);
 
-        distance.put(idA, 0.0);
-        pq.add(new int[]{idA, 0});
-        precedent.put(idA, null);
+        Map<Integer, Double> distance = new HashMap<>();
+        Map<Integer, Integer> parent = new HashMap<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.comparingDouble(distance::get));
+        Set<Integer> visite = new HashSet<>();
+
+        for (Integer id : artistes.keySet()) {
+            distance.put(id, Double.MAX_VALUE);
+        }
+
+        distance.put(debut, 0.0);
+        pq.add(debut);
+        parent.put(debut, null);
 
         while (!pq.isEmpty()) {
-            int[] node = pq.poll();
-            int current = node[0];
-
-            if (current == idB) {
-                imprimerChemin(construireChemin(idA, idB, precedent, distance.get(idB)));
+            int actuel = pq.poll();
+            if (actuel == fin) {
+                printPath(constructPath(fin, parent, distance.get(fin)));
                 return;
             }
+            if (visite.add(actuel)) {
+                for (Map.Entry<Integer, Double> entry : listeAdjacence.getOrDefault(actuel, Collections.emptyMap()).entrySet()) {
+                    int neighbor = entry.getKey();
+                    double nvDistance = distance.get(actuel) + entry.getValue();
 
-            for (Map.Entry<Integer, Double> entry : adjacencyList.getOrDefault(current, Collections.emptyMap()).entrySet()) {
-                int neighbor = entry.getKey();
-                double newDist = distance.getOrDefault(current, Double.MAX_VALUE) + entry.getValue();
-
-                if (newDist < distance.getOrDefault(neighbor, Double.MAX_VALUE)) {
-                    distance.put(neighbor, newDist);
-                    precedent.put(neighbor, current);
-                    pq.add(new int[]{neighbor, (int) newDist});
+                    if (nvDistance < distance.get(neighbor)) {
+                        distance.put(neighbor, nvDistance);
+                        parent.put(neighbor, actuel);
+                        pq.add(neighbor);
+                    }
                 }
             }
         }
         throw new RuntimeException("Aucun chemin entre " + artisteA + " et " + artisteB);
     }
 
-    private int getArtistId(String name) {
-        if (!artistNameToId.containsKey(name)) {
-            throw new RuntimeException("Artiste introuvable: " + name);
-        }
-        return artistNameToId.get(name);
+    private int getArtisteId(String nom) {
+        return Optional.ofNullable(nomArtisteVersId.get(nom))
+                .orElseThrow(() -> new RuntimeException("Artiste introuvable: " + nom));
     }
 
-    private Path construireChemin(int start, int end, Map<Integer, Integer> parent, double totalWeight) {
-        List<Integer> path = new ArrayList<>();
-        for (Integer at = end; at != null; at = parent.get(at)) {
-            path.add(at);
+    private double calculerLongueurChemin(Map<Integer, Integer> parent, int fin) {
+        double cout = 0.0;
+        Integer actuel = fin;
+        while (parent.get(actuel) != null) {
+            cout += listeAdjacence.get(parent.get(actuel)).get(actuel);
+            actuel = parent.get(actuel);
         }
-        Collections.reverse(path);
-        return new Path(path, totalWeight);
+        return cout;
     }
 
-    private void imprimerChemin(Path path) {
-        System.out.println("Longueur du chemin : " + path.getLength());
-        System.out.println("Coût total du chemin : " + path.getTotalCost());
+    private Chemin constructPath(int fin, Map<Integer, Integer> parent, double coutTotal) {
+        List<Integer> chemin = new ArrayList<>();
+        for (Integer at = fin; at != null; at = parent.get(at)) {
+            chemin.add(at);
+        }
+        Collections.reverse(chemin);
+        return new Chemin(chemin, coutTotal);
+    }
+
+    private void printPath(Chemin chemin) {
+        System.out.println("Longueur du chemin : " + chemin.getLongueurChemin());
+        System.out.println("Coût total du chemin : " + chemin.getCoutTotalChemin());
         System.out.println("Chemin :");
 
-        List<Integer> nodeIds = path.getArtistIds();
-        for (int nodeId : nodeIds) {
-            System.out.println(artists.get(nodeId));
+        for (int id : chemin.getArtistIds()) {
+            System.out.println(artistes.get(id));
         }
     }
 }
