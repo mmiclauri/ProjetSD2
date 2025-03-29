@@ -131,12 +131,12 @@ class Graph {
     }
 
     private Chemin constructPath(int fin, Map<Integer, Integer> parent, double coutTotal) {
-        List<Integer> chemin = new ArrayList<>();
+        List<Integer> artistes = new ArrayList<>();
         for (Integer at = fin; at != null; at = parent.get(at)) {
-            chemin.add(at);
+            artistes.add(at);
         }
-        Collections.reverse(chemin);
-        return new Chemin(chemin, coutTotal);
+        Collections.reverse(artistes);
+        return new Chemin(artistes, coutTotal);
     }
 
     private void printPath(Chemin chemin) {
