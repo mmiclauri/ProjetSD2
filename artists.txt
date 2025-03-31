@@ -711,7 +711,7 @@
 711,Adair (band),musical_groups_established_in_2001
 712,Adair Cardoso,21st_century_brazilian_singers
 713,Adair Tishler,21st_century_american_singers
-714,Adalberto Ã?lvarez y su Son,musical_groups_established_in_1984
+714,Adalberto ï¿½?lvarez y su Son,musical_groups_established_in_1984
 715,Adalita Srsen,21st_century_australian_singers
 716,Adam Again,musical_groups_established_in_1982
 717,Adam Agius,21st_century_australian_singers
@@ -2290,7 +2290,7 @@
 2290,April Weeps,musical_groups_established_in_2004
 2291,April Wine,musical_groups_established_in_1969
 2292,Apse (band),musical_groups_established_in_1999
-2293,Apsolutno RomantiÄ?no,musical_groups_established_in_1997
+2293,Apsolutno Romantiï¿½?no,musical_groups_established_in_1997
 2294,Apteka,musical_groups_established_in_1983
 2295,AqME,musical_groups_established_in_1999
 2296,Aqua (band),musical_groups_established_in_1989
@@ -2548,7 +2548,7 @@
 2548,As Yet Unbroken,musical_groups_established_in_2007
 2549,As the Poets Affirm,musical_groups_established_in_2001
 2550,Asa Martin,20th_century_american_singers
-2551,Asa de Ã?guia,musical_groups_established_in_1987
+2551,Asa de ï¿½?guia,musical_groups_established_in_1987
 2552,Asaf Avidan,musical_groups_established_in_2006
 2553,Asaiah Ziv,21st_century_american_rappers
 2554,Asanda,21st_century_english_singers
@@ -7322,7 +7322,7 @@
 7322,Chyp-Notic,musical_groups_established_in_1988
 7323,ChÃ©bere,musical_groups_established_in_1973
 7324,ChÃ©ri (band),musical_groups_established_in_1982
-7325,ChÅ? Tokimeki Sendenbu,musical_groups_established_in_2015
+7325,Chï¿½? Tokimeki Sendenbu,musical_groups_established_in_2015
 7326,ChÅ“ur de chambre de Namur,musical_groups_established_in_1987
 7327,Ciao Bella Cinquetti,musical_groups_established_in_2006
 7328,Ciara,21st_century_american_singers
@@ -9470,7 +9470,7 @@
 9470,Debs and Errol,musical_groups_established_in_2011
 9471,Debtor (band),musical_groups_established_in_2007
 9472,Debu,musical_groups_established_in_2001
-9473,Deca LoÅ¡ih MuziÄ?ara,musical_groups_established_in_1988
+9473,Deca LoÅ¡ih Muziï¿½?ara,musical_groups_established_in_1988
 9474,Decade (band),musical_groups_established_in_2009
 9475,Decadence (band),musical_groups_established_in_2003
 9476,Decapitated (band),musical_groups_established_in_1996
@@ -10188,7 +10188,7 @@
 10188,Doberman Infinity,musical_groups_established_in_2014
 10189,Doble A & Nales,musical_groups_established_in_2004
 10190,Dobri Isak,musical_groups_established_in_1983
-10191,Dobrovoljno PevaÄ?ko DruÅ¡tvo,musical_groups_established_in_1994
+10191,Dobrovoljno Pevaï¿½?ko DruÅ¡tvo,musical_groups_established_in_1994
 10192,Doc Cheatham,20th_century_american_singers
 10193,Doc Corbin Dart,20th_century_american_singers;21st_century_american_singers
 10194,Doc Pomus,20th_century_american_singers
@@ -10682,7 +10682,7 @@
 10682,Dru Hill,musical_groups_established_in_1992
 10683,Drudkh,musical_groups_established_in_2003
 10684,Drug Restaurant,musical_groups_established_in_2015
-10685,Drugi naÄ?in,musical_groups_established_in_1974
+10685,Drugi naï¿½?in,musical_groups_established_in_1974
 10686,Drugstore (band),musical_groups_established_in_1993
 10687,Druha Rika,musical_groups_established_in_1996
 10688,DruhÃ¡ TrÃ¡va,musical_groups_established_in_1991
@@ -10725,7 +10725,7 @@
 10725,Dublin Gospel Choir,musical_groups_established_in_1996
 10726,Dublin Philharmonic Orchestra,musical_groups_established_in_1997
 10727,Dubmatique,musical_groups_established_in_1992
-10728,DubrovaÄ?ki trubaduri,musical_groups_established_in_1961
+10728,Dubrovaï¿½?ki trubaduri,musical_groups_established_in_1961
 10729,Dubrovniks,musical_groups_established_in_1986
 10730,Dubstar,musical_groups_established_in_1992
 10731,Dubtribe Sound System,musical_groups_established_in_1991
@@ -11312,7 +11312,7 @@
 11312,Elegy (band),musical_groups_established_in_1986
 11313,Elektra (band),musical_groups_established_in_2009
 11314,Elektrisk Regn,musical_groups_established_in_1978
-11315,ElektriÄ?ni Orgazam,musical_groups_established_in_1980
+11315,Elektriï¿½?ni Orgazam,musical_groups_established_in_1980
 11316,Elektro Kumbia,musical_groups_established_in_2016
 11317,Elektroforez,musical_groups_established_in_2012
 11318,Elektropartizany,musical_groups_established_in_2003
@@ -11710,7 +11710,7 @@
 11710,Ensiferum,musical_groups_established_in_1995
 11711,Enslaved (band),musical_groups_established_in_1991
 11712,Enslavement of Beauty,musical_groups_established_in_1995
-11713,EnsÅ? String Quartet,musical_groups_established_in_1999
+11713,Ensï¿½? String Quartet,musical_groups_established_in_1999
 11714,Enter Shikari,musical_groups_established_in_2003
 11715,Enter the Haggis,musical_groups_established_in_1996
 11716,Enterprise Earth,musical_groups_established_in_2014
@@ -13675,7 +13675,7 @@
 13675,Gece (band),musical_groups_established_in_2000
 13676,Gece YolcularÄ±,musical_groups_established_in_1995
 13677,Geddy Lee,20th_century_canadian_singers;21st_century_canadian_singers
-13678,GedÅ? (band),musical_groups_established_in_1973
+13678,Gedï¿½? (band),musical_groups_established_in_1973
 13679,Geeshie Wiley,20th_century_american_singers
 13680,Geeza,musical_groups_established_in_1973
 13681,Geezer Butler Band,musical_groups_established_in_1984
@@ -16768,7 +16768,7 @@
 16768,J Rabbit,musical_groups_established_in_2010
 16769,J Rand,21st_century_american_singers
 16770,J Rice,21st_century_american_singers
-16771,J Ã?lvarez,21st_century_american_singers
+16771,J ï¿½?lvarez,21st_century_american_singers
 16772,J'Son (singer),21st_century_american_singers
 16773,J*Davey,musical_groups_established_in_2005
 16774,J*S*T*A*R*S,musical_groups_established_in_2002
@@ -17296,7 +17296,7 @@
 17296,Janyse Jaud,20th_century_canadian_singers;21st_century_canadian_singers
 17297,Janysium,musical_groups_established_in_1980
 17298,Janzi Band,musical_groups_established_in_2009
-17299,JanÃ¡Ä?ek Philharmonic Orchestra,musical_groups_established_in_1954
+17299,JanÃ¡ï¿½?ek Philharmonic Orchestra,musical_groups_established_in_1954
 17300,Japaharinet,musical_groups_established_in_1999
 17301,Japan (band),musical_groups_established_in_1974
 17302,Japan Ground Self-Defense Force Music Corps,musical_groups_established_in_1951
@@ -18863,7 +18863,7 @@
 18863,Juniper (band),musical_groups_established_in_1991
 18864,Juniper Lane,musical_groups_established_in_1998
 18865,Junius (band),musical_groups_established_in_2003
-18866,JunjÅ? no Afilia,musical_groups_established_in_2008
+18866,Junjï¿½? no Afilia,musical_groups_established_in_2008
 18867,Junk Beer Kidnap Band,musical_groups_established_in_2009
 18868,Junk Yard Band,musical_groups_established_in_1980
 18869,Junkhouse,musical_groups_established_in_1989
@@ -18968,7 +18968,7 @@
 18968,K.S. Rhoads,21st_century_american_singers
 18969,K.d. lang,20th_century_canadian_singers;21st_century_canadian_singers
 18970,K/DA,musical_groups_established_in_2018
-18971,K2 (KovaÄ? sisters duo),musical_groups_established_in_1990
+18971,K2 (Kovaï¿½? sisters duo),musical_groups_established_in_1990
 18972,K2R Riddim,musical_groups_established_in_1992
 18973,K3 (band),musical_groups_established_in_1998
 18974,K5 (band),musical_groups_established_in_1995
@@ -20713,7 +20713,7 @@
 20713,Lazy Mutha Fucka,musical_groups_established_in_1993
 20714,Lazy Smoke,musical_groups_established_in_1967
 20715,LaÃ¯s (band),musical_groups_established_in_1994
-20716,LaÄ?ni Franz,musical_groups_established_in_1979
+20716,Laï¿½?ni Franz,musical_groups_established_in_1979
 20717,Le Balcon,musical_groups_established_in_2008
 20718,Le Butcherettes,musical_groups_established_in_2007
 20719,Le Car (band),musical_groups_established_in_1995
@@ -21802,9 +21802,9 @@
 21802,Los Yorks,musical_groups_established_in_1966
 21803,Los Zafiros,musical_groups_established_in_1961
 21804,Los del RÃ­o,musical_groups_established_in_1962
-21805,Los Ã?ngeles Azules,musical_groups_established_in_1983
-21806,Los Ã?ngeles Negros,musical_groups_established_in_1968
-21807,Los Ã?ngeles de Charly,musical_groups_established_in_1999
+21805,Los ï¿½?ngeles Azules,musical_groups_established_in_1983
+21806,Los ï¿½?ngeles Negros,musical_groups_established_in_1968
+21807,Los ï¿½?ngeles de Charly,musical_groups_established_in_1999
 21808,Loser (band),musical_groups_established_in_2004
 21809,Lost & Profound,musical_groups_established_in_1989
 21810,Lost (band),musical_groups_established_in_2003
@@ -24684,7 +24684,7 @@
 24684,Morning Again,musical_groups_established_in_1995
 24685,Morning Has Occurred,musical_groups_established_in_2010
 24686,Morning Musume,musical_groups_established_in_1997
-24687,Morning Musume TanjÅ? 10nen Kinentai,musical_groups_established_in_2007
+24687,Morning Musume Tanjï¿½? 10nen Kinentai,musical_groups_established_in_2007
 24688,Morning Parade,musical_groups_established_in_2007
 24689,Morning Runner,musical_groups_established_in_2003
 24690,Morning Spy,musical_groups_established_in_2001
@@ -25116,8 +25116,8 @@
 25116,MÃ¼nchener Freiheit,musical_groups_established_in_1980
 25117,MÃ¼tiilation,musical_groups_established_in_1991
 25118,MÃ½a,20th_century_american_singers;21st_century_american_singers
-25119,MÄ?kaha Sons,musical_groups_established_in_1976
-25120,MÅˆÃ¡ga a Å½Ä?orp,musical_groups_established_in_1987
+25119,Mï¿½?kaha Sons,musical_groups_established_in_1976
+25120,MÅˆÃ¡ga a Å½ï¿½?orp,musical_groups_established_in_1987
 25121,N'Dambi,20th_century_american_singers;21st_century_american_singers
 25122,N'Dea Davenport,20th_century_american_singers;21st_century_american_singers
 25123,N'Klabe,musical_groups_established_in_2003
@@ -25580,7 +25580,7 @@
 25580,Neonfly,musical_groups_established_in_2008
 25581,Neopera,musical_groups_established_in_2010
 25582,Neopol,musical_groups_established_in_2010
-25583,NeoÄ?ekivana Sila Koja Se Iznenada Pojavljuje i ReÅ¡ava Stvar,musical_groups_established_in_1997
+25583,Neoï¿½?ekivana Sila Koja Se Iznenada Pojavljuje i ReÅ¡ava Stvar,musical_groups_established_in_1997
 25584,Nepal (band),musical_groups_established_in_1984
 25585,Nephew (band),musical_groups_established_in_1996
 25586,Neptune (Italian band),musical_groups_established_in_1999
@@ -26907,7 +26907,7 @@
 26907,Orson (band),musical_groups_established_in_2000
 26908,Orthodox Celts,musical_groups_established_in_1992
 26909,Orthotonics,musical_groups_established_in_1979
-26910,OruÅ¾jem Protivu OtmiÄ?ara,musical_groups_established_in_1992
+26910,OruÅ¾jem Protivu Otmiï¿½?ara,musical_groups_established_in_1992
 26911,Orval Prophet,20th_century_canadian_singers
 26912,Orville Couch,20th_century_american_singers
 26913,Orville Peck,21st_century_canadian_singers
@@ -26943,7 +26943,7 @@
 26943,Ostrobothnian Chamber Orchestra,musical_groups_established_in_1973
 26944,Ostrogoth (band),musical_groups_established_in_1980
 26945,Osuwa Daiko,musical_groups_established_in_1951
-26946,OsvajaÄ?i,musical_groups_established_in_1990
+26946,Osvajaï¿½?i,musical_groups_established_in_1990
 26947,Otava Yo,musical_groups_established_in_2003
 26948,Otep,musical_groups_established_in_2000
 26949,Otep Shamaya,21st_century_american_rappers
@@ -28235,7 +28235,7 @@
 28235,Polyrock,musical_groups_established_in_1978
 28236,Pom Poko (band),musical_groups_established_in_2017
 28237,Pomada,musical_groups_established_in_1971
-28238,PomaranÄ?a,musical_groups_established_in_1979
+28238,Pomaranï¿½?a,musical_groups_established_in_1979
 28239,Pomme (singer),21st_century_french_singers
 28240,Pommez Internacional,musical_groups_established_in_2010
 28241,Pompeii (band),musical_groups_established_in_2004
@@ -28293,7 +28293,7 @@
 28293,Porno for Pyros,musical_groups_established_in_1992
 28294,Porno para Ricardo,musical_groups_established_in_1998
 28295,Pornography (band),musical_groups_established_in_2013
-28296,PorodiÄ?na Manufaktura Crnog Hleba,musical_groups_established_in_1968
+28296,Porodiï¿½?na Manufaktura Crnog Hleba,musical_groups_established_in_1968
 28297,Port Cities,musical_groups_established_in_2015
 28298,Port Harcourt Male Ensemble,musical_groups_established_in_2001
 28299,Portal (band),musical_groups_established_in_1994
@@ -28957,7 +28957,7 @@
 28957,Radius (music ensemble),musical_groups_established_in_2007
 28958,Radius Ensemble,musical_groups_established_in_1999
 28959,Radja,musical_groups_established_in_2001
-28960,RadniÄ?ka Kontrola,musical_groups_established_in_1979
+28960,Radniï¿½?ka Kontrola,musical_groups_established_in_1979
 28961,Radwimps,musical_groups_established_in_2001
 28962,Rae Baker,21st_century_english_singers
 28963,Rae Morris,21st_century_english_singers
@@ -34280,7 +34280,7 @@
 34280,SÃ¶hne Mannheims,musical_groups_established_in_1995
 34281,SÃ¸ren (band),musical_groups_established_in_2013
 34282,SÃ¸yr,musical_groups_established_in_1976
-34283,SÅ?taisei Riron,musical_groups_established_in_2006
+34283,Sï¿½?taisei Riron,musical_groups_established_in_2006
 34284,SÅµnami,musical_groups_established_in_2011
 34285,T & N,musical_groups_established_in_2011
 34286,T La Rock,21st_century_american_rappers
@@ -39198,7 +39198,7 @@
 39198,Timothy Wright,20th_century_american_singers
 39199,Timpuri Noi,musical_groups_established_in_1983
 39200,Timz,21st_century_american_rappers
-39201,TimÅ?rÄ?tus,musical_groups_established_in_2006
+39201,Timï¿½?rï¿½?tus,musical_groups_established_in_2006
 39202,Tin Alley,musical_groups_established_in_1998
 39203,Tin Foil Phoenix,musical_groups_established_in_1997
 39204,Tin Hat,musical_groups_established_in_1997
@@ -40158,7 +40158,7 @@
 40158,Tyssem,21st_century_french_singers
 40159,Tytan (band),musical_groups_established_in_1981
 40160,TÃ¡mar,21st_century_american_singers
-40161,TÃ¢m Ä?oan,21st_century_canadian_singers
+40161,TÃ¢m ï¿½?oan,21st_century_canadian_singers
 40162,TÃ¢nia Mara,21st_century_brazilian_singers
 40163,TÃ©ada,musical_groups_established_in_2001
 40164,TÃ©lÃ©phone,musical_groups_established_in_1976
@@ -42469,7 +42469,7 @@
 42469,Zakary Thaks,musical_groups_established_in_1966
 42470,Zaki Ibrahim,21st_century_canadian_singers
 42471,Zakkum (band),musical_groups_established_in_1999
-42472,ZakloniÅ¡Ä?e prepeva,musical_groups_established_in_1994
+42472,ZakloniÅ¡ï¿½?e prepeva,musical_groups_established_in_1994
 42473,Zakrytoye Predpriyatiye,musical_groups_established_in_1986
 42474,Zal Yanovsky,20th_century_canadian_singers
 42475,Zalon,21st_century_english_singers
@@ -42577,7 +42577,7 @@
 42577,Zircon Lounge,musical_groups_established_in_1980
 42578,Ziskakan,musical_groups_established_in_1979
 42579,Zizi Possi,20th_century_brazilian_singers
-42580,Zlatni DeÄ?aci,musical_groups_established_in_1962
+42580,Zlatni Deï¿½?aci,musical_groups_established_in_1962
 42581,Zlatni Prsti,musical_groups_established_in_1970
 42582,Zmelkoow,musical_groups_established_in_1992
 42583,Znowhite,musical_groups_established_in_1982
@@ -42603,7 +42603,7 @@
 42603,Zombina and the Skeletones,musical_groups_established_in_1998
 42604,Zon (band),musical_groups_established_in_1977
 42605,Zona B,musical_groups_established_in_1987
-42606,Zona IskljuÄ?enja,musical_groups_established_in_1995
+42606,Zona Iskljuï¿½?enja,musical_groups_established_in_1995
 42607,Zona Jones,21st_century_american_singers
 42608,Zonaria,musical_groups_established_in_2002
 42609,Zonata,musical_groups_established_in_1998
@@ -42653,9 +42653,9 @@
 42653,ZÃ¼ri West,musical_groups_established_in_1985
 42654,Â¡All-Time Quarterback!,musical_groups_established_in_1997
 42655,Ã€;GRUMH...,musical_groups_established_in_1981
-42656,Ã?ngeles del Infierno,musical_groups_established_in_1980
-42657,Ã?nh Minh,21st_century_american_singers
-42658,Ã?smegin,musical_groups_established_in_1998
+42656,ï¿½?ngeles del Infierno,musical_groups_established_in_1980
+42657,ï¿½?nh Minh,21st_century_american_singers
+42658,ï¿½?smegin,musical_groups_established_in_1998
 42659,Ã…rabrot,musical_groups_established_in_2001
 42660,Ã…smund Ã…mli Band,musical_groups_established_in_1996
 42661,Ã†on Spoke,musical_groups_established_in_1999
@@ -42682,7 +42682,7 @@
 42682,Ã‰tienne (Canadian musician),21st_century_canadian_singers
 42683,Ã‰tienne Drapeau,21st_century_canadian_singers
 42684,Ã‰toile de Dakar,musical_groups_established_in_1979
-42685,Ã?mar (band),musical_groups_established_in_2016
+42685,ï¿½?mar (band),musical_groups_established_in_2016
 42686,Ã‘ejo & Dalmata,musical_groups_established_in_2001
 42687,Ã‘engo Flow,21st_century_american_singers
 42688,Ã‘u,musical_groups_established_in_1974
@@ -42692,13 +42692,13 @@
 42692,Ä„Å¾uoliukas,musical_groups_established_in_1959
 42693,ÄŒao Laru,musical_groups_established_in_2015
 42694,ÄŒechomor,musical_groups_established_in_1988
-42695,ÄŒinÄ?,musical_groups_established_in_2001
+42695,ÄŒinï¿½?,musical_groups_established_in_2001
 42696,ÄŒista Proza,musical_groups_established_in_1979
 42697,ÄŒovek Bez Sluha,musical_groups_established_in_1994
-42698,Ä?avoli,musical_groups_established_in_1984
-42699,Å?zy,musical_groups_established_in_1996
-42700,Å?Ä…ki Å?an,musical_groups_established_in_2002
-42701,Å?szibarack,musical_groups_established_in_2003
+42698,ï¿½?avoli,musical_groups_established_in_1984
+42699,ï¿½?zy,musical_groups_established_in_1996
+42700,ï¿½?Ä…ki ï¿½?an,musical_groups_established_in_2002
+42701,ï¿½?szibarack,musical_groups_established_in_2003
 42702,Åšcianka,musical_groups_established_in_1994
 42703,Åšwietliki,musical_groups_established_in_1992
 42704,Å ank Rock,musical_groups_established_in_1982
